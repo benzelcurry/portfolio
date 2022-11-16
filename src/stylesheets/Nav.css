@@ -1,0 +1,19 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  gap: 30px;
+  background-color: #6495ED;
+}
+
+.nav-icon {
+  display: flex;
+  align-items: center;
+  height: 100%;
+  cursor: pointer;
+}
+
+.nav-icon:hover {
+  color: #fff;
+}
