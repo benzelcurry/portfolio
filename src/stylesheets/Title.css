@@ -3,14 +3,23 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 50px;
   font-size: 5rem;
   height: 285px;
+  width: 1200px;
   overflow: hidden;
   border-bottom: solid 1px black;
 }
 
+@media (max-width: 1000px) {
+  .title-container {
+    width: 700px;
+  }
+}
+
 .name {
+  margin-left: -300px;
   animation: 2s slide-down ease-out;
 }
 
@@ -27,6 +36,7 @@
 }
 
 .position {
+  margin-left: 50px;
   font-weight: bold;
   padding-left: 50px;
   animation: 2s slide-up ease-in;
