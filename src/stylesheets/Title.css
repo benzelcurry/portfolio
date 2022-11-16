@@ -1,0 +1,41 @@
+.title-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  padding: 50px;
+  font-size: 5rem;
+  overflow: hidden;
+}
+
+.name {
+  animation: 2s slide-down ease-out;
+}
+
+@keyframes slide-down {
+  from {
+    margin-top: -100px;
+    opacity: 0%;
+  }
+
+  to {
+    margin-top: 0px;
+    opacity: 100%;
+  }
+}
+
+.position {
+  font-weight: bold;
+  padding-left: 50px;
+  animation: 2s slide-up ease-in;
+  animation-delay: 0.5s;
+}
+
+@keyframes slide-up {
+  from {
+    opacity: 0%;
+  }
+
+  to {
+    opacity: 100%;
+  }
+}
