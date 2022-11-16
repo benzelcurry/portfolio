@@ -6,4 +6,9 @@
   font-size: 2rem;
   font-weight: bold;
   margin: 0px;
+  margin-left: -20px;
+}
+
+.bold {
+  font-weight: bold;
 }
