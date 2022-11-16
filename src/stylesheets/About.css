@@ -11,6 +11,11 @@
   margin-left: -20px;
 }
 
+.about-section {
+  display: flex;
+  flex-direction: column;
+}
+
 .bold {
   font-weight: bold;
 }
@@ -37,4 +42,15 @@
   align-items: center;
   gap: 5px;
   font-size: 0.8rem;
+}
+
+@media (min-width: 1001px) {
+  .about-section {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .about-info {
+    max-width: 600px;
+  }
 }
