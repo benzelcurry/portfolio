@@ -2,9 +2,12 @@
   align-self: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
   padding: 50px;
   font-size: 5rem;
+  height: 285px;
   overflow: hidden;
+  border-bottom: solid 1px black;
 }
 
 .name {
