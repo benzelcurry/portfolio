@@ -1,4 +1,6 @@
 .about-container {
+  display: flex;
+  flex-direction: column;
   padding: 50px;
 }
 
@@ -11,4 +13,28 @@
 
 .bold {
   font-weight: bold;
+}
+
+.dev-icon {
+  height: 50px;
+  width: 50px;
+}
+
+.skills-grid {
+  align-self: center;
+  margin-top: 20px;
+  display: grid;
+  width: 500px;
+  height: 300px;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 1fr);
+}
+
+.skills {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.8rem;
 }
