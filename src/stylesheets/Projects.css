@@ -1,0 +1,16 @@
+.projects-container {
+  align-self: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 50px;
+  border-bottom: solid 1px black;
+}
+
+.projects-title {
+  align-self: start;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 0px;
+  margin-left: -20px;
+}

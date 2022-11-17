@@ -5,7 +5,7 @@ import '../stylesheets/Projects.css';
 const Projects = () => {
   return (
     <div className="projects-container">
-      Projects content will go in here.
+      <h2 className="projects-title">Projects</h2>
     </div>
   );
 };
