@@ -15,8 +15,14 @@ const Projects = () => {
             Clone of letterboxd.com, built from the ground up using React, The Movie
             Database API, and Firebase Hosting.
           </div>
-          <a href="https://letterboxd-clone-odin.web.app/"><button>Live App</button></a>
-          <a href="https://github.com/benzelcurry/letterboxd-clone"><button>Repository</button></a>
+          <div className="buttons">
+            <a href="https://letterboxd-clone-odin.web.app/" target='_blank' rel='noreferrer'>
+              <button>Live App</button>
+            </a>
+            <a href="https://github.com/benzelcurry/letterboxd-clone" target='_blank' rel='noreferrer'>
+              <button>Repository</button>
+            </a>
+          </div>
         </div>
       </div>
     </div>

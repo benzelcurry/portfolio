@@ -34,5 +34,37 @@
 .project-info {
   display: flex;
   flex-direction: column;
-  gap: 40px;
+  align-items: center;
+  gap: 15px;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.buttons button {
+  background-color: #6495ED;
+  border: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+  width: 100px;
+  border-radius: 5px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.buttons button:hover {
+  filter: brightness(1.1);
+}
+
+.buttons button:active {
+  filter: brightness(0.9);
+}
+
+a {
+  text-decoration: none;
 }
