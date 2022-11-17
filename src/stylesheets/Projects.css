@@ -33,6 +33,7 @@
 }
 
 .project-name {
+  align-self: flex-start;
   font-size: 1.2rem;
   font-weight: bold;
 }
