@@ -1,10 +1,14 @@
 .about-container {
+  align-self: center;
   display: flex;
   flex-direction: column;
+  align-items: center;
   padding: 50px;
+  border-bottom: solid 1px black;
 }
 
 .about-title {
+  align-self: start;
   font-size: 2rem;
   font-weight: bold;
   margin: 0px;
@@ -45,6 +49,10 @@
 }
 
 @media (min-width: 1001px) {
+  .about-container {
+    width: 1200px;
+  }
+
   .about-section {
     flex-direction: row;
     align-items: center;
