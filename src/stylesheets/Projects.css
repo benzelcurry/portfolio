@@ -21,7 +21,7 @@
 }
 
 .screenshot {
-  min-width: 600px;
+  max-width: 600px;
   max-height: 304px;
 }
 
@@ -75,16 +75,6 @@
   }
 }
 
-@media (max-width: 600px) {
-  .project {
-    flex-direction: column;
-  }
-
-  .project.middle {
-    flex-direction: column;
-  }
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -114,4 +104,23 @@
 
 a {
   text-decoration: none;
+}
+
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project.middle {
+    flex-direction: column;
+  }
+
+  .screenshot {
+    width: 320px;
+  }
+
+  .buttons button {
+    width: 200px;
+    height: 40px;
+  }
 }
