@@ -30,12 +30,12 @@ const Projects = () => {
         </div>
         <div className="project">
           <div className="project-info">
-            <div className="project-name">Where's Waldo</div>
+            <div className="project-name middle">Where's Waldo</div>
             <div className="project-description">
               Where's Waldo web app, built using React, Firestore Database, and Firebase
               hosting.
             </div>
-            <div className="buttons">
+            <div className="buttons middle">
               <a href="https://wheres-waldo-at.web.app/" target='_blank' rel='noreferrer'>
                 <button>Live App</button>
               </a>

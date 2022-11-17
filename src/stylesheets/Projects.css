@@ -45,6 +45,26 @@
   gap: 15px;
 }
 
+@media (min-width: 1001px) {
+  .project-info {
+    height: 304px;
+    width: 300px;
+    justify-content: space-around;
+  }
+
+  .project-name.middle {
+    align-self: flex-end;
+  }
+
+  .buttons {
+    align-self: start;
+  }
+
+  .buttons.middle {
+    align-self: flex-end;
+  }
+}
+
 .buttons {
   display: flex;
   flex-direction: column;
