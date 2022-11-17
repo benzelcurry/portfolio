@@ -1,5 +1,4 @@
 .projects-container {
-  align-self: center;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -13,4 +12,27 @@
   font-weight: bold;
   margin: 0px;
   margin-left: -20px;
+}
+
+.screenshot {
+  min-width: 600px;
+  max-height: 304px;
+}
+
+.project {
+  margin-top: 30px;
+  display: flex;
+  align-items: center;
+  gap: 20px;
+}
+
+.project-name {
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+.project-info {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
