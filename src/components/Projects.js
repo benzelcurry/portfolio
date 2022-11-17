@@ -28,7 +28,8 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="project">
+        <div className="project middle">
+          <img src={Waldo} alt="Where's Waldo" className='screenshot' />
           <div className="project-info">
             <div className="project-name middle">Where's Waldo</div>
             <div className="project-description">
@@ -44,7 +45,6 @@ const Projects = () => {
               </a>
             </div>
           </div>
-          <img src={Waldo} alt="Where's Waldo" className='screenshot' />
         </div>
         <div className="project">
           <img src={ToDo} alt='To-Do list' className='screenshot' />

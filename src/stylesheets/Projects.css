@@ -45,6 +45,10 @@
   gap: 15px;
 }
 
+.project.middle {
+  flex-direction: row-reverse;
+}
+
 @media (min-width: 1001px) {
   .project-info {
     height: 304px;
@@ -62,6 +66,22 @@
 
   .buttons.middle {
     align-self: flex-end;
+  }
+
+  .buttons button {
+    width: 150px;
+    height: 30px;
+    font-size: 0.9rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .project {
+    flex-direction: column;
+  }
+
+  .project.middle {
+    flex-direction: column;
   }
 }
 
