@@ -6,6 +6,12 @@
   border-bottom: solid 1px black;
 }
 
+.projects-display {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
 .projects-title {
   align-self: start;
   font-size: 2rem;
