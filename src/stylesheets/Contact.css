@@ -13,3 +13,19 @@
   margin: 0px;
   margin-left: -20px;
 }
+
+.contact-status {
+  margin-top: 30px;
+}
+
+.contact-icon {
+  height: 40px;
+}
+
+.contact-icon:hover {
+  filter: brightness(1.2);
+}
+
+.contact-icon.gh:hover {
+  filter: brightness(1.8);
+}
