@@ -4,6 +4,7 @@ import Nav from './Nav';
 import Title from './Title';
 import About from './About';
 import Projects from './Projects';
+import Contact from './Contact';
 import '../stylesheets/App.css';
 
 const App = () => {
@@ -14,9 +15,10 @@ const App = () => {
         <Title />
         <About />
         <Projects />
+        <Contact />
       </div>
     </div>
   );
-}
+};
 
 export default App;

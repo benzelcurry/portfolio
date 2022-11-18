@@ -16,7 +16,7 @@ const Projects = () => {
             <div className="project-name">Letterboxd Clone</div>
             <div className="project-description">
               Clone of letterboxd.com, built from the ground up using React, The Movie
-              Database API, and Firebase Hosting.
+              Database API, Google Authentication, and Firebase Hosting.
             </div>
             <div className="buttons">
               <a href="https://letterboxd-clone-odin.web.app/" target='_blank' rel='noreferrer'>
