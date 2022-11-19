@@ -18,6 +18,19 @@
   margin-top: 30px;
 }
 
+.contact-form {
+  display: flex;
+  margin: 40px;
+  width: 500px;
+  gap: 50px;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
 .contact-icon {
   height: 40px;
 }
@@ -27,5 +40,27 @@
 }
 
 .contact-icon.gh:hover {
-  filter: brightness(1.8);
+  filter: brightness(2);
+}
+
+.email-form {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.email-form input {
+  font-size: 14px;
+  width: 400px;
+  height: 20px;
+  padding: 5px;
+}
+
+textarea.form-message {
+  font-family: inherit;
+  padding: 5px;
+  font-size: 14px;
+  text-align: start;
+  height: 150px;
+  resize: none;
 }
