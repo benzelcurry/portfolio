@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Send from '../images/send.svg';
 import '../stylesheets/Contact.css';
 
 const Contact = () => {
@@ -33,7 +34,7 @@ const Contact = () => {
           <textarea aria-label='Enter your message' className='form-message' 
             type="text" name='message' placeholder='Message' required />
           {/* Get an icon to go with the send button */}
-          <button className='submit'>Send</button>
+          <button className='submit'>Send <img src={Send} alt='' /></button>
         </form>
       </div>
     </div>
