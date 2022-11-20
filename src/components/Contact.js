@@ -33,7 +33,6 @@ const Contact = () => {
             type="email" name='email' placeholder='Email' required />
           <textarea aria-label='Enter your message' className='form-message' 
             type="text" name='message' placeholder='Message' required />
-          {/* Get an icon to go with the send button */}
           <button className='submit'>Send <img src={Send} alt='' /></button>
         </form>
       </div>

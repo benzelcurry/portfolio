@@ -107,6 +107,10 @@ a {
 }
 
 @media (max-width: 600px) {
+  .projects-container {
+    margin: 0 20px 0 20px;
+  }
+
   .project {
     flex-direction: column;
   }
