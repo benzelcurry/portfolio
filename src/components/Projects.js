@@ -1,4 +1,5 @@
 import React from 'react';
+import { useInView } from 'react-intersection-observer';
 
 import Letterboxd from '../images/letterboxd-clone.png';
 import Waldo from '../images/waldo.png';
@@ -6,11 +7,15 @@ import ToDo from '../images/to-do.png';
 import '../stylesheets/Projects.css';
 
 const Projects = () => {
+  const { ref: lb, inView: lbVisible } = useInView({});
+  const { ref: waldo, inView: waldoVisible } = useInView({});
+  const { ref: todo, inView: todoVisible } = useInView({});
+
   return (
-    <div className="projects-container">
+    <div className="projects-container" id='projects'>
       <h2 className="projects-title">Projects</h2>
       <div className="projects-display">
-        <div className='project'>
+        <div ref={lb} className={`${'project'} ${lbVisible ? 'animate-lb' : ''}`}>
           <img src={Letterboxd} alt='Letterboxd clone' className='screenshot' />
           <div className="project-info">
             <div className="project-name">Letterboxd Clone</div>
@@ -28,7 +33,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="project middle">
+        <div ref={waldo} className={`${'project'} ${'middle'} ${waldoVisible ? 'animate-waldo' : ''}`}>
           <img src={Waldo} alt="Where's Waldo" className='screenshot' />
           <div className="project-info">
             <div className="project-name middle">Where's Waldo</div>
@@ -46,7 +51,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div className="project">
+        <div ref={todo} className={`${'project'} ${todoVisible ? 'animate-todo' : ''}`}>
           <img src={ToDo} alt='To-Do list' className='screenshot' />
           <div className="project-info">
             <div className="project-name">To-Do List</div>

@@ -106,6 +106,42 @@ a {
   text-decoration: none;
 }
 
+.animate-lb {
+  animation: 2s slide-left;
+}
+
+.animate-waldo {
+  animation: 2s slide-right;
+}
+
+.animate-todo {
+  animation: 2s slide-left;
+}
+
+@keyframes slide-left {
+  from {
+    margin-left: -100px;
+    opacity: 0%;
+  }
+
+  to {
+    margin-left: 0px;
+    opacity: 100%;
+  }
+}
+
+@keyframes slide-right {
+  from {
+    margin-right: -100px;
+    opacity: 0%;
+  }
+
+  to {
+    margin-right: 0px;
+    opacity: 100%;
+  }
+}
+
 @media (max-width: 600px) {
   .projects-container {
     margin: 0 20px 0 20px;

@@ -5,7 +5,7 @@ import '../stylesheets/Contact.css';
 
 const Contact = () => {
   return (
-    <div className="contact-container">
+    <div className="contact-container" id='contact'>
       <h2 className="contact-title">Contact</h2>
       <div className="contact-status">
         I am currently seeking a position as either a front end or full stack 
