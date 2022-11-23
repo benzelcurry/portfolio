@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   padding: 50px;
-  border-bottom: solid 1px black;
+  border-bottom: solid 1px #fff;
 }
 
 .projects-display {
@@ -18,11 +18,17 @@
   font-weight: bold;
   margin: 0px;
   margin-left: -20px;
+  padding-bottom: 20px;
 }
 
 .screenshot {
   max-width: 600px;
   max-height: 304px;
+  box-shadow: -20px -20px 3px #fff;
+}
+
+.screenshot.waldo {
+  box-shadow: 20px -20px 3px #fff;
 }
 
 .project {

@@ -13,7 +13,6 @@ const Title = () => {
   })
 
   return (
-    // Perhaps work on this opening animation? Ask for peoples' opinions on it.
     <div className="title-container">
       <div className="name">Ben Whiting</div>
       <div className="position" style={{visibility: `${visible}`}}>Web Developer</div>

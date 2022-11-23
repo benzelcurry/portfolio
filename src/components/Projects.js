@@ -34,7 +34,7 @@ const Projects = () => {
           </div>
         </div>
         <div ref={waldo} className={`${'project'} ${'middle'} ${waldoVisible ? 'animate-waldo' : ''}`}>
-          <img src={Waldo} alt="Where's Waldo" className='screenshot' />
+          <img src={Waldo} alt="Where's Waldo" className='screenshot waldo' />
           <div className="project-info">
             <div className="project-name middle">Where's Waldo</div>
             <div className="project-description">
