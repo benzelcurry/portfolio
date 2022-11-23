@@ -20,6 +20,9 @@
 
 .contact-form {
   display: flex;
+  background-color: #164769;
+  padding: 30px 40px 30px 30px;
+  border-radius: 10px;
   margin: 40px;
   width: 500px;
   gap: 50px;
@@ -98,6 +101,8 @@ textarea.form-message {
     padding-top: 30px;
     margin: 0px;
     width: 320px;
+    background-color: inherit;
+    border: none;
   }
 
   .socials {
@@ -112,5 +117,9 @@ textarea.form-message {
 
   .email-form input {
     width: 320px;
+  }
+
+  .gh {
+    filter: invert(100%) sepia(100%) saturate(0%) hue-rotate(307deg) brightness(103%) contrast(101%);
   }
 }
