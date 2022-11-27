@@ -55,32 +55,6 @@
   flex-direction: row-reverse;
 }
 
-@media (min-width: 1001px) {
-  .project-info {
-    height: 304px;
-    width: 300px;
-    justify-content: space-around;
-  }
-
-  .project-name.middle {
-    align-self: flex-end;
-  }
-
-  .buttons {
-    align-self: start;
-  }
-
-  .buttons.middle {
-    align-self: flex-end;
-  }
-
-  .buttons button {
-    width: 150px;
-    height: 30px;
-    font-size: 0.9rem;
-  }
-}
-
 .buttons {
   display: flex;
   flex-direction: column;
@@ -168,5 +142,55 @@ a {
   .buttons button {
     width: 200px;
     height: 40px;
+  }
+}
+
+/* Slide-in animation doesn't look great at 600-1000 px */
+@media (max-width: 1000px) {
+  .project {
+    opacity: 0;
+  }
+
+  .animate-lb,
+  .animate-todo,
+  .animate-waldo {
+    animation: 4s appear forwards;
+  }
+
+  @keyframes appear {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 100%;
+    }
+  }
+}
+
+
+@media (min-width: 1001px) {
+  .project-info {
+    height: 304px;
+    width: 300px;
+    justify-content: space-around;
+  }
+
+  .project-name.middle {
+    align-self: flex-end;
+  }
+
+  .buttons {
+    align-self: start;
+  }
+
+  .buttons.middle {
+    align-self: flex-end;
+  }
+
+  .buttons button {
+    width: 150px;
+    height: 30px;
+    font-size: 0.9rem;
   }
 }
