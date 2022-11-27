@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
 import Letterboxd from '../images/letterboxd-clone.png';
@@ -10,12 +10,27 @@ const Projects = () => {
   const { ref: lb, inView: lbVisible } = useInView({});
   const { ref: waldo, inView: waldoVisible } = useInView({});
   const { ref: todo, inView: todoVisible } = useInView({});
+  const [lbShown, setLbShown] = useState(false);
+  const [waldoShown, setWaldoShown] = useState(false);
+  const [todoShown, setTodoShown] = useState(false);
+
+  useEffect(() => {
+    if (lbVisible) { setLbShown(true) }
+  }, [lbVisible])
+
+  useEffect(() => {
+    if (waldoVisible) { setWaldoShown(true) }
+  }, [waldoVisible])
+
+  useEffect(() => {
+    if (todoVisible) { setTodoShown(true) }
+  }, [todoVisible])
 
   return (
     <div className="projects-container" id='projects'>
       <h2 className="projects-title">Projects</h2>
       <div className="projects-display">
-        <div ref={lb} className={`${'project'} ${lbVisible ? 'animate-lb' : ''}`}>
+        <div ref={lb} className={`${'project'} ${lbShown ? 'animate-lb' : ''}`}>
           <img src={Letterboxd} alt='Letterboxd clone' className='screenshot' />
           <div className="project-info">
             <div className="project-name">Letterboxd Clone</div>
@@ -33,7 +48,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div ref={waldo} className={`${'project'} ${'middle'} ${waldoVisible ? 'animate-waldo' : ''}`}>
+        <div ref={waldo} className={`${'project'} ${'middle'} ${waldoShown ? 'animate-waldo' : ''}`}>
           <img src={Waldo} alt="Where's Waldo" className='screenshot waldo' />
           <div className="project-info">
             <div className="project-name middle">Where's Waldo</div>
@@ -51,7 +66,7 @@ const Projects = () => {
             </div>
           </div>
         </div>
-        <div ref={todo} className={`${'project'} ${todoVisible ? 'animate-todo' : ''}`}>
+        <div ref={todo} className={`${'project'} ${todoShown ? 'animate-todo' : ''}`}>
           <img src={ToDo} alt='To-Do list' className='screenshot' />
           <div className="project-info">
             <div className="project-name">To-Do List</div>
