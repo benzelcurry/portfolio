@@ -78,3 +78,9 @@
     width: 320px;
   }
 }
+
+@media (max-width: 360px) {
+  .about-title {
+    margin-left: 0;
+  }
+}

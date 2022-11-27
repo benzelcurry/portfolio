@@ -150,3 +150,13 @@ textarea.form-message:focus {
     margin-top: 20px;
   }
 }
+
+@media (max-width: 360px) {
+  .contact-title {
+    margin-left: 0;
+  }
+
+  .email-form input {
+    width: 300px;
+  }
+}
