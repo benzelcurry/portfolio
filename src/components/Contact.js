@@ -36,6 +36,7 @@ const Contact = () => {
           <button className='submit'>Send <img src={Send} alt='' /></button>
         </form>
       </div>
+      <a href='#navbar'><button className="return">Return To Top</button></a>
     </div>
   );
 };
