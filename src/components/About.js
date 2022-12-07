@@ -15,7 +15,8 @@ const About = () => {
           and I'm fascinated by any task that requires problem-solving. These traits have naturally
           led me to develop a passion for <span className='bold'>web development</span> and the
           desire to pursue a career within the field.</p>
-          <p>My hobbies outside of web development include cooking, hiking, reading, language learning,
+          <p>My hobbies outside of web development include cooking, hiking, reading, language learning 
+          (I speak Spanish at a conversational level),
           and gaming.</p>
         </div>
         <div className="skills-grid">
