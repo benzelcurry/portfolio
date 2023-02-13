@@ -19,7 +19,7 @@ const Contact = () => {
               alt='Github' className='contact-icon gh'
             />
           </a>
-          <a href="https://www.linkedin.com/in/ben-whiting-563526207/" target='_blank' rel='noreferrer'>
+          <a href="https://www.linkedin.com/in/benawhiting/" target='_blank' rel='noreferrer'>
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/linkedin/linkedin-original.svg"
               alt='LinkedIn' className='contact-icon'
             />
