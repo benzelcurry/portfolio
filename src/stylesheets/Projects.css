@@ -86,6 +86,10 @@ a {
   text-decoration: none;
 }
 
+.animate-book {
+  animation: 2s slide-right;
+}
+
 .animate-lb {
   animation: 2s slide-left;
 }
@@ -151,6 +155,7 @@ a {
     opacity: 0;
   }
 
+  .animate-book,
   .animate-lb,
   .animate-todo,
   .animate-waldo {

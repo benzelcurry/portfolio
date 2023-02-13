@@ -1,18 +1,25 @@
 import React, { useState, useEffect } from 'react';
 import { useInView } from 'react-intersection-observer';
 
+import Benzelbook from '../images/benzelbook.png';
 import Letterboxd from '../images/letterboxd-clone.png';
 import Waldo from '../images/waldo.png';
 import ToDo from '../images/to-do.png';
 import '../stylesheets/Projects.css';
 
 const Projects = () => {
+  const { ref: book, inView: bookVisible } = useInView({});
   const { ref: lb, inView: lbVisible } = useInView({});
   const { ref: waldo, inView: waldoVisible } = useInView({});
   const { ref: todo, inView: todoVisible } = useInView({});
+  const [bookShown, setBookShown] = useState(false);
   const [lbShown, setLbShown] = useState(false);
   const [waldoShown, setWaldoShown] = useState(false);
   const [todoShown, setTodoShown] = useState(false);
+
+  useEffect(() => {
+    if (bookVisible) { setBookShown(true) }
+  }, [bookVisible])
 
   useEffect(() => {
     if (lbVisible) { setLbShown(true) }
@@ -30,6 +37,24 @@ const Projects = () => {
     <div className="projects-container" id='projects'>
       <h2 className="projects-title">Projects</h2>
       <div className="projects-display">
+        <div ref={book} className={`${'project'} ${'middle'} ${bookShown ? 'animate-waldo' : ''}`}>
+          <img src={Benzelbook} alt="Benzelbook" className='screenshot waldo' />
+          <div className="project-info">
+            <div className="project-name middle">Benzelbook</div>
+            <div className="project-description">
+              Full stack MERN app inspired by Facebook. Primary technologies include React,
+              MongoDB, and Express/Node.js.
+            </div>
+            <div className="buttons middle">
+              <a href="https://benzel-book.web.app/" target='_blank' rel='noreferrer'>
+                <button>Live App</button>
+              </a>
+              <a href="https://github.com/benzelcurry/benzelbook" target='_blank' rel='noreferrer'>
+                <button>Repository</button>
+              </a>
+            </div>
+          </div>
+        </div>
         <div ref={lb} className={`${'project'} ${lbShown ? 'animate-lb' : ''}`}>
           <img src={Letterboxd} alt='Letterboxd clone' className='screenshot' />
           <div className="project-info">
