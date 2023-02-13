@@ -48,6 +48,10 @@
   font-size: 0.8rem;
 }
 
+.mongodb {
+  grid-column: 1/4;
+}
+
 @media (min-width: 1001px) {
   .about-container {
     width: 1200px;

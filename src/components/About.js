@@ -15,7 +15,8 @@ const About = () => {
           and I'm fascinated by any task that requires problem-solving. These traits have naturally
           led me to develop a passion for <span className='bold'>web development</span> and the
           desire to pursue a career within the field.</p>
-          <p>My hobbies outside of web development include cooking, hiking, reading, language learning,
+          <p>My hobbies outside of web development include cooking, hiking, reading, language learning 
+          (I speak Spanish at a conversational level),
           and gaming.</p>
         </div>
         <div className="skills-grid">
@@ -54,6 +55,11 @@ const About = () => {
           <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt='NPM' className='dev-icon' />
             <div className="skill-name">NPM</div>
+          </div>
+          {/* MongoDB has its own CSS; will need to be updated as more skills added */}
+          <div className="skills mongodb">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" alt='MongoDB' className='dev-icon' />
+            <div className="skill-name">MongoDB</div>
           </div>
         </div>
       </div>
