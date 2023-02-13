@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact-container" id='contact'>
       <h2 className="contact-title">Contact</h2>
       <div className="contact-status">
-        I am currently seeking a position as either a front end or full stack 
+        I am currently seeking a position as either a front end, back end, or full stack 
         web developer. If you're interested in learning more about either me or my
         projects, feel free to reach out to me below!
       </div>
