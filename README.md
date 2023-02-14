@@ -1,6 +1,7 @@
 # Portfolio
 
 This is the repo for my personal portfolio! Check it out at https://ben-whiting.web.app/
+<img src="https://imgur.com/a/vJKOwoA" alt="Screenshot of Portfolio app" />
 
 ## Features
 * About section
