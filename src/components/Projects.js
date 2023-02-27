@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import Benzelbook from '../images/benzelbook.png';
 import Letterboxd from '../images/letterboxd-clone.png';
 import Waldo from '../images/waldo.png';
-import ToDo from '../images/to-do.png';
+import BlogAPI from '../images/blog-api.png';
 import '../stylesheets/Projects.css';
 
 const Projects = () => {
@@ -92,18 +92,19 @@ const Projects = () => {
           </div>
         </div>
         <div ref={todo} className={`${'project'} ${todoShown ? 'animate-todo' : ''}`}>
-          <img src={ToDo} alt='To-Do list' className='screenshot' />
+          <img src={BlogAPI} alt='Blog API' className='screenshot' />
           <div className="project-info">
-            <div className="project-name">To-Do List</div>
+            <div className="project-name">Blog API</div>
             <div className="project-description">
-              To-do list web app, built using vanilla JS and utilizing local storage for 
-              saving user data between sessions.
+              Full stack blogging app, featuring a RESTful API built with a Node.js/Express 
+              back-end and a React front-end. Majority of CRUD operations are restricted to
+              users with admin privileges.
             </div>
             <div className="buttons">
-              <a href="https://benzelcurry.github.io/to-do-list/" target='_blank' rel='noreferrer'>
+              <a href="https://blog-api-client.web.app/" target='_blank' rel='noreferrer'>
                 <button>Live App</button>
               </a>
-              <a href="https://github.com/benzelcurry/to-do-list" target='_blank' rel='noreferrer'>
+              <a href="https://github.com/benzelcurry/blog-api" target='_blank' rel='noreferrer'>
                 <button>Repository</button>
               </a>
             </div>
