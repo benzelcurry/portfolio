@@ -4,7 +4,7 @@ import { useInView } from 'react-intersection-observer';
 import Benzelbook from '../images/benzelbook.png';
 import Letterboxd from '../images/letterboxd-clone.png';
 import Waldo from '../images/waldo.png';
-import BlogAPI from '../images/blog-api.png';
+import ENVSMatcher from '../images/envs-matcher.png';
 import '../stylesheets/Projects.css';
 
 const Projects = () => {
@@ -37,6 +37,24 @@ const Projects = () => {
     <div className="projects-container" id='projects'>
       <h2 className="projects-title">Projects</h2>
       <div className="projects-display">
+        <div ref={todo} className={`${'project'} ${todoShown ? 'animate-todo' : ''}`}>
+          <img src={ENVSMatcher} alt='ENVS Matcher' className='screenshot' />
+          <div className="project-info">
+            <div className="project-name">ENVS Matcher</div>
+            <div className="project-description">
+              Full stack career-matching app, allowing admins to update the site
+              without writing code. Built with Typescript, React, Node.js, MongoDB, and Tailwind.
+            </div>
+            <div className="buttons">
+              <a href="https://envs-matcher.web.app/" target='_blank' rel='noreferrer'>
+                <button>Live App</button>
+              </a>
+              <a href="https://github.com/benzelcurry/envs-matcher" target='_blank' rel='noreferrer'>
+                <button>Repository</button>
+              </a>
+            </div>
+          </div>
+        </div>
         <div ref={book} className={`${'project'} ${'middle'} ${bookShown ? 'animate-waldo' : ''}`}>
           <img src={Benzelbook} alt="Benzelbook" className='screenshot waldo' />
           <div className="project-info">
@@ -86,25 +104,6 @@ const Projects = () => {
                 <button>Live App</button>
               </a>
               <a href="https://github.com/benzelcurry/wheres-waldo" target='_blank' rel='noreferrer'>
-                <button>Repository</button>
-              </a>
-            </div>
-          </div>
-        </div>
-        <div ref={todo} className={`${'project'} ${todoShown ? 'animate-todo' : ''}`}>
-          <img src={BlogAPI} alt='Blog API' className='screenshot' />
-          <div className="project-info">
-            <div className="project-name">Blog API</div>
-            <div className="project-description">
-              Full stack blogging app, featuring a RESTful API built with a Node.js/Express 
-              back-end and a React front-end. Majority of CRUD operations are restricted to
-              users with admin privileges.
-            </div>
-            <div className="buttons">
-              <a href="https://blog-api-client.web.app/" target='_blank' rel='noreferrer'>
-                <button>Live App</button>
-              </a>
-              <a href="https://github.com/benzelcurry/blog-api" target='_blank' rel='noreferrer'>
                 <button>Repository</button>
               </a>
             </div>

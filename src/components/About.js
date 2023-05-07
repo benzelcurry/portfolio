@@ -21,6 +21,22 @@ const About = () => {
         </div>
         <div className="skills-grid">
           <div className="skills">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='JS' className='dev-icon' />
+            <div className="skill-name">JAVASCRIPT</div>
+          </div>
+          <div className="skills">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-plain.svg" alt='TS' className='dev-icon' />
+            <div className="skill-name">TYPESCRIPT</div>
+          </div>
+          <div className="skills">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt='React' className='dev-icon' />
+            <div className="skill-name">REACT</div>
+          </div>
+          <div className="skills">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className='dev-icon' />
+            <div className="skill-name">Node.js</div>
+          </div>
+          <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt='HTML' className='dev-icon' />
             <div className="skill-name">HTML</div>
           </div>
@@ -29,12 +45,8 @@ const About = () => {
             <div className="skill-name">CSS</div>
           </div>
           <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" alt='JS' className='dev-icon' />
-            <div className="skill-name">JAVASCRIPT</div>
-          </div>
-          <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" alt='React' className='dev-icon' />
-            <div className="skill-name">REACT</div>
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tailwindcss/tailwindcss-plain.svg" alt='Tailwind' className='dev-icon' />
+            <div className="skill-name">TAILWIND</div>
           </div>
           <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jest/jest-plain.svg" alt='Jest' className='dev-icon' />
@@ -53,20 +65,8 @@ const About = () => {
             <div className="skill-name">FIREBASE</div>
           </div>
           <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" alt='NPM' className='dev-icon' />
-            <div className="skill-name">NPM</div>
-          </div>
-          <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" alt='MongoDB' className='dev-icon' />
             <div className="skill-name">MongoDB</div>
-          </div>
-          <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className='dev-icon' />
-            <div className="skill-name">Node.js</div>
-          </div>
-          <div className="skills">
-          <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg" alt='Express' className='dev-icon' />
-          <div className="skill-name">Express</div>
           </div>
         </div>
       </div>
