@@ -8,7 +8,7 @@ const Contact = () => {
     <div className="contact-container" id='contact'>
       <h2 className="contact-title">Contact</h2>
       <div className="contact-status">
-        I'm currently working full time as a full stack developer and not seeking work, but 
+        I'm currently employed as a full stack developer and am not seeking work, but 
         if you're interested in reaching out and talking about anything code-related, feel 
         free to contact me via the form below!
         {/* I am currently seeking a position as either a front end, back end, or full stack 
