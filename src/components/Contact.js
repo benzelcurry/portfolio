@@ -8,9 +8,12 @@ const Contact = () => {
     <div className="contact-container" id='contact'>
       <h2 className="contact-title">Contact</h2>
       <div className="contact-status">
-        I am currently seeking a position as either a front end, back end, or full stack 
+        I'm currently working full time as a full stack developer and not seeking work, but 
+        if you're interested in reaching out and talking about anything code-related, feel 
+        free to contact me via the form below!
+        {/* I am currently seeking a position as either a front end, back end, or full stack 
         web developer. If you're interested in learning more about either me or my
-        projects, feel free to reach out to me below!
+        projects, feel free to reach out to me below! */}
       </div>
       <div className="contact-form">
         <div className="socials">
