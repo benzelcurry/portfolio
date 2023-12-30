@@ -13,8 +13,8 @@ const About = () => {
           living in the Pacific Northwest.</p>
           <p>Two of the things that best define me are that I value being a life-long learner
           and I'm fascinated by any task that requires problem-solving. These traits have naturally
-          led me to develop a passion for <span className='bold'>web development</span> and the
-          desire to pursue a career within the field.</p>
+          led me to develop a passion for <span className='bold'>web development</span> and software
+          engineering in general.</p>
           <p>My hobbies outside of web development include cooking, hiking, reading, language learning 
           (I speak Spanish at a conversational level),
           and gaming.</p>
