@@ -13,11 +13,13 @@ const About = () => {
           living in the Pacific Northwest.</p>
           <p>Two of the things that best define me are that I value being a life-long learner
           and I'm fascinated by any task that requires problem-solving. These traits have naturally
-          led me to develop a passion for <span className='bold'>web development</span> and software
-          engineering in general.</p>
+          led me to develop a passion for <span className='bold'>web development</span> and <span className='bold'>software
+          engineering</span> in general.</p>
           <p>My hobbies outside of web development include cooking, hiking, reading, language learning 
-          (I speak Spanish at a conversational level),
+          (I speak Spanish and am learning Japanese),
           and gaming.</p>
+          <p>Please note that the skills on display are not an exhaustive list, and there are additional
+          technologies that I'm proficient in!</p>
         </div>
         <div className="skills-grid">
           <div className="skills">
@@ -34,7 +36,11 @@ const About = () => {
           </div>
           <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="Node.js" className='dev-icon' />
-            <div className="skill-name">Node.js</div>
+            <div className="skill-name">NODE.JS</div>
+          </div>
+          <div className="skills">
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/csharp/csharp-plain.svg" alt='C#' className='dev-icon' />            
+            <div className="skill-name">C#</div>
           </div>
           <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain.svg" alt='HTML' className='dev-icon' />
@@ -56,17 +62,13 @@ const About = () => {
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt='Git' className='dev-icon' />
             <div className="skill-name">GIT</div>
           </div>
-          <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webpack/webpack-original.svg" alt='Webpack' className='dev-icon' />
-            <div className="skill-name">WEBPACK</div>
-          </div>
-          <div className="skills">
-            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg" alt='Firebase' className='dev-icon' />
-            <div className="skill-name">FIREBASE</div>
+          <div className="skills">       
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-plain.svg" alt='PostgreSQL' className='dev-icon' />
+            <div className="skill-name">POSTGRESQL</div>
           </div>
           <div className="skills">
             <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain.svg" alt='MongoDB' className='dev-icon' />
-            <div className="skill-name">MongoDB</div>
+            <div className="skill-name">MONGODB</div>
           </div>
         </div>
       </div>
